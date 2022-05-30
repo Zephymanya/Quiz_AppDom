@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-emerald-300">
+    <form id="divQuestion2" class="bg-white ml-96 w-4/12 h-auto mt-9">
+      <h1 class="text-center pt-8 font-sans text-xl">Javascript Quiz</h1>
+      <p class="text-center w-80 ml-14 mt-8 text-sm opacity-70 p-2">
+        Évaluez vos connaissances en JavaScript en répondant aux questions que
+        nous avons spécialement sélectionnées pour vous. C'est fun et c'est
+        gratuit.
+      </p>
+      <!-- Début avec les inputs -->
+      <div class="p-2">
+        <label for="" class="ml-5 opacity-70 text-sm">Nom</label>
+        <input
+          name="Nom"
+          id="entrer1"
+          type="text"
+          class="w-96 ml-5 h-12 rounded border-2 placeholder:Nom"
+        />
+      </div>
+      <div class="p-2">
+        <label for="" class="ml-5 opacity-70 text-sm">E-mail</label>
+        <input
+          name="email"
+          id="entrer2"
+          type="text"
+          class="w-96 ml-5 h-12 rounded border-2"
+        />
+      </div>
+      <!-- les input type Radio -->
+      <div class="pt-10 flex-col"></div>
+      <div class="ml-28 p-10 flex-row">
+        <button id="buttn" class="bg-lime-700 p-3 text-cyan-50 px-6">
+          Commencer
+        </button>
+      </div>
+    </form>
+    <!-- div 1 Fin -->
+    <!-- div 2 pour la deuxième question -->
+    <form
+      id="divQuestion3"
+      class="divQuestionQ bg-white ml-96 w-4/12 h-auto mt-9"
+    >
+      <p id="selectQuest" class="text-center w-80 ml-14 pt-10 text-sm opacity-70 p-2">
+      
+      </p>
+      <!-- paragraphes pour afficher le temps -->
+      <div class="flex">
+        <p class="ml-6 w-80 mt-8 text-sm opacity-70">
+          <span class="game"></span>
+        </p>
+        <p class="ml-64 w-80 mt-8 text-sm opacity-70">
+          <span class="timeCount"></span>
+        </p>
+      </div>
+      <!-- Début avec les inputs -->
+      <div
+        id="interface1"
+        class="w-96 ml-6 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+      >
+        <div class="barre bg-lime-800 h-2.5 rounded-full"></div>
+      </div>
+      <!-- les input type Radio -->
+      <div class="pt-10 flex-col">
+        <div class="ml-6 pt-4 border-2 py-2 w-96 p-3 flex gap-4" onclick="SelectInput(this)">
+          <input
+            id="repInput0"
+            type="radio"
+            name="chek"
+            class="mt-2"
+            value=".jpg"
+          />
+          <label id='labell' class="lab" for="repInput0"></label>
+        </div>
+         <br />
+        <div class="ml-6 pt-4 border-2 py-2 w-96 p-3 flex gap-4" onclick="SelectInput(this)">
+          <input
+            id="repInput0"
+            type="radio"
+            name="chek"
+            class="mt-2"
+            value=".jsx"
+          />
+          <label id='labell' for="repInput0"></label>
+        </div>
+         <br />
+          <div  class="ml-6 pt-4 border-2 py-2 w-96 p-3 flex gap-4" onclick="SelectInput(this)">
+          <input
+            id="repInput0"
+            type="radio"
+            name="chek"
+            class="mt-2"
+            value=".jpg"
+          />
+          <label id='labell' for="repInput0"></label>
+        </div>
+         <br />
+        <div class="ml-6 pt-4 border-2 py-2 w-96 p-3 flex gap-4" onclick="SelectInput(this)">
+          <input
+            id="repInput0"
+            type="radio"
+            name="chek"
+            class="mt-2"
+            value=".js"
+          />
+          <label id='labell' for="repInput0"></label>
+        </div>
+        <br />
+      
+      <div class="ml-8 p-10 flex gap-10">
+        <button class="bg-orange-500 py-2 text-cyan-50 px-10">Quitter</button>
+        <button disabled="disabled" id="btnSuivant" class=" py-2 text-cyan-50 px-10">
+         Suivant
+        </button>
+      </div>
+    </form>
+
+
+
+
+
+
+
+    
+    <!-- div 13 pour la deuxième question -->
+    <!-- div 15 pour la deuxième question -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

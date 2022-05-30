@@ -1,0 +1,26 @@
+body {
+  background-color: dimgrey;
+}
+.btn {
+  margin: 10%;
+  width: 10%;
+  height: 2%;
+  background-color: aqua;
+}
+#interface1 {
+  width: 50%;
+  background-color: rgb(108, 180, 180);
+  border-radius: 50px;
+  position: relative;
+}
+#rebour {
+  position: absolute;
+  padding: 2%;
+  width: 50%;
+  background-color: chartreuse;
+  border-radius: 50px;
+}
+p {
+  color: beige;
+  background-color: rgb(172, 236, 172);
+}
